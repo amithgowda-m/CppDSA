@@ -1,0 +1,24 @@
+#include <iostream>;
+using namespace std;
+
+int main(){
+    int math;
+    int sci;
+    int eng;
+
+    cout<<"Enter math marks : ";
+    cin>>math;
+
+    cout<<"Enter science marks : ";
+    cin>>sci;
+
+    cout<<"Enter english marks : ";
+    cin>>eng;
+    
+
+    float avg = (math+sci+eng)/3.;
+
+    cout<<"The average marks is : "<<avg;
+    return 0;
+
+}
