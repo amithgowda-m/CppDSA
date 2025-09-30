@@ -1,0 +1,4 @@
+A contradiction is a situation or statement in which two or more things are in direct opposition, 
+making it impossible for all of them to be true at the same time. In logic and mathematics, a 
+contradiction occurs when a proposition conflicts with itself or with established facts, 
+indicating that an assumption or argument is false.
