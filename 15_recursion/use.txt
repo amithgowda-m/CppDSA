@@ -1,0 +1,11 @@
+recursion breaks big problem into small ones and solve them
+
+f(x)= x^2=== int func(int x){return x*x; };
+
+Almost same as composition of function
+factorial n!= n(n-1)! 
+f(n)=n*f(n-1) } called as recurence relation
+
+bigger is n! so break to small (n-1)! so on upto 1 or 0 
+1! = 1= 0!
+
