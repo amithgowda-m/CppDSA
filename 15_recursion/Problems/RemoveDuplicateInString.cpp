@@ -19,7 +19,7 @@ void removeDuplicate(string str, string ans,int i, bool map[]){
     }
 }
 
-void remDupI(string str, string ans, bool map[]){
+void remDupI(string str, string ans, bool map[]){// this is the way without i
     if(str.size() ==0){
         cout<<"ans : "<<ans<<endl;
         return;

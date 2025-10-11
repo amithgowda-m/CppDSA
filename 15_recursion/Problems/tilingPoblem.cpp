@@ -1,4 +1,4 @@
-//count total ways to tile a floow (2*n) with tiles (2*1)
+//count total ways to tile a floor of dimension (2*n) with tiles of dimension (2*1)
 
 #include <iostream>
 #include <string>
