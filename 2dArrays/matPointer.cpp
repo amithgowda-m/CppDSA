@@ -12,6 +12,6 @@ int main(){
     cout<<arr<<" "<<&arr[0][0]<<"\n";
     cout<<arr+1<<" "<<&arr[0][1]<<"\n";
     cout<<arr+1<<" "<<&arr[1][0]<<"\n";
-
+    cout<<*(*(arr)+1)<<endl;
     cout<<*(*(arr+1)+1);
 }

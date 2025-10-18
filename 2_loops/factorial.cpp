@@ -10,7 +10,7 @@ int main(){
 
 
     }
-    cout<<n<<"factorial is :"<<facn<<endl;
+    cout<<n<<" factorial is :"<<facn<<endl;
     
     return 0;
 }

@@ -6,24 +6,16 @@ int main (){
     cout<<"Enter a number to check: ";
     cin>>n;
     int original = n;
-    while (n>0)
-    {
+    while (n>0){
         int dig=n%10;
         sum= sum + dig*dig*dig;
         n= n/10;
-
-
-
     }
-
-    if (sum == original)
-    {
+    if (sum == original){
         cout<<original<<" is a armstrongg number"<<endl;
     }
-    
     else{
         cout<<"Not an Armstrong number"<<endl;
     }
-    
-    
+    return 0;
 }

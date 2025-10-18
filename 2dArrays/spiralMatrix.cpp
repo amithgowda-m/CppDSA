@@ -5,12 +5,12 @@ void spiralMatrix(int matrix[][5], int n, int m)
 {
     int srow = 0, scol = 0;
     int erow = n - 1, ecol = m - 1;
-    while (srow <= erow && scol<=ecol)//<= bcoz when we have odd rows or cols we encounter no problem
-    {//at middle row srow = erow to print 
-        //if we have odd cols then to print middle elements ecol=scol
+    while (srow <= erow && scol <= ecol) //<= bcoz when we have odd rows or cols we encounter no problem
+    {                                    // at middle row srow = erow to print
+        // if we have odd cols then to print middle elements ecol=scol
 
         // top
-        for (int j =scol    ; j <= ecol; j++)
+        for (int j = scol; j <= ecol; j++)
         {
             cout << matrix[srow][j] << " ";
         }
@@ -21,18 +21,18 @@ void spiralMatrix(int matrix[][5], int n, int m)
         }
         // bottom
         for (int j = ecol - 1; j >= scol; j--)
-        {   
-            if (srow==erow)///when rows or odd without this one element duplicates
+        {
+            if (srow == erow) /// when rows or odd without this one element duplicates
             {
                 break;
             }
-            
+
             cout << matrix[erow][j] << " ";
         }
         // left
         for (int i = erow - 1; i >= srow + 1; i--)
         {
-             if (scol==ecol)///when rows or odd without this one element duplicates
+            if (scol == ecol) /// when rows or odd without this one element duplicates
             {
                 break;
             }
@@ -76,7 +76,7 @@ int main()
     // {
     //     cout << arr[i][j] << " ";
     // }
-    cout<<"Printing spirally\n";
+    cout << "Printing spirally\n";
     spiralMatrix(arr, 5, 5);
 
     return 0;

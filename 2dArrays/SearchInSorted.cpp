@@ -1,11 +1,11 @@
 // row wise column wise sorted matrix of order 2 cross 2
-// 1 st approach bruteforce -- go to each cell adn search for key TC = O(n*m);
+// 1 st approach bruteforce -- go to each cell and search for key TC = O(n*m);
 // 2nd approach - row wise or column wise binary search (based on which is small)
 // binary search per row TC=O(logm)--best and worst case for colum n , row m  //
 // total = O(nlogm)
-// if they have mentioned in question that it is sorted row wise or column wise or both then this approach is best because we are using their hint
+// if they have mentioned in question that it is sorted row wise or column wise or 
+//both then this approach is best because we are using their hint
 // they have given sateek informtion to solve question effficiently
-
 // 3 rd approach stair case search
 
 #include <iostream>
