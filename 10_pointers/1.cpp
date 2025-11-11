@@ -7,5 +7,5 @@ int main(){
     cout<<pa<<"\n"<<*pa;
     *pa =20;//called dereference
     cout<<"\n"<<a;
-    return 0;
+    return 0;w
 }

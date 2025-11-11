@@ -11,4 +11,5 @@ int main(){
     cho +=a;
     *ptr+=ch;
     cout<<a<<","<<ch<<endl;
+    return 0;
 }

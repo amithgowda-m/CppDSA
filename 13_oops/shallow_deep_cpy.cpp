@@ -19,7 +19,7 @@ class Car{
         color=  original.color;
         mileage=new int();
 
-        *mileage=*original.mileage;  //here one more pointer is created which points to the same memory location but its value is not allocated
+        *mileage=*original.mileage;  //It creates a new pointer pointing to a new memory location, and then copies the value from original.mileage. So c1.mileage and c2.mileage are different addresses, holding the same value.
     }
     //destructor
     ~Car(){//when object comes out of the scope of a funcition default destructor gets ceated and it is called automatically
@@ -46,7 +46,10 @@ int main(){
     cout<<"To get its  value do dereference : "<<*(c2.mileage)<<endl;
     // if i change c2 mileage it will get reflected to c1
     *(c2.mileage)=10;
-    cout<<"C1 milege after changing c2 is : "<<*c1.mileage;//this tells they both point to same memory location 
+    cout<<"C1 milege after changing c2 is : \n"<<*c1.mileage<<endl;//this tells they both point to same memory location 
+    cout << c1.mileage << endl;
+cout << c2.mileage << endl;
+
     return 0;//when this comes default automatic destroctor created and memeory get de alocated
 
 }

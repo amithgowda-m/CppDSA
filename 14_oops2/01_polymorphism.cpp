@@ -33,7 +33,7 @@ public:
     void showNum(){
         cout<<real<<" + "<<img<<"i\n";
     }
-    Complex operator + (Complex &c2){
+    Complex operator + (Complex &c2){//operator overloading
         int resReal = this->real + c2.real;
         int resImg = this->img + c2.img;
         Complex c3(resReal,resImg);

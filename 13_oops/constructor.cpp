@@ -30,7 +30,6 @@ public:
     void stop(){
         cout<<"car has stopped";
     }
-
     //Getter
     string getName(){
         return name;

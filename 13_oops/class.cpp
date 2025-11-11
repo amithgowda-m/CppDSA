@@ -16,25 +16,20 @@ class Student{ // blue print
     void getPercentage(){
         cout << (cgpa * 10) << "% \n";//there method have access to properties to change them or alter get data from them
     }
-
     //setters
     void setName(string nameVal){
         name=nameVal;
-
     }
     void setCgpa(float cgpaVal ){
         cgpa = cgpaVal;
     }
-
     //getters
     string getName(){
         return name;
-
     }
     float getCgpa( ){
         return cgpa;
     }
-    
 };
 
 class User{
@@ -50,6 +45,7 @@ class User{
         bio = newBio;
     }
 };
+
 int main(){
     // after declaring the classs memory get allocated
     Student s1; // object of Student class
@@ -58,7 +54,6 @@ int main(){
     cout<<endl;
     s1.setName("gowdru");
     s1.setCgpa(10);
-
     cout<<s1.getName()<<"\n";
     cout<<s1.getCgpa()<<"\n"; 
     cout<<endl;

@@ -37,9 +37,6 @@ void Kadane(int arr[],int n){//time complexity =o(n)
         curSum+=arr[i];
         maxSum=max(maxSum,curSum);
         if (curSum<0)
-
-
-        
         {
             curSum=0;
         }

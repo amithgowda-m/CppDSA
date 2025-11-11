@@ -5,7 +5,6 @@ using namespace std;
 //string str ="hello"//here str is object and its clas and type is sting
 #include <string>
 
-
 int main(){
     string str = "Hello";
     getline(cin,str,'$');
@@ -13,4 +12,5 @@ int main(){
     cout<<str[0];
     str="World";
     cout<<str;
+    return 0;
 }

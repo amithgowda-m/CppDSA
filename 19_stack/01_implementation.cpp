@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 
-//reate Stack using vector 
+//Create Stack using vector 
 
 template <class T>
 class Stack{
@@ -33,6 +33,7 @@ public:
         return vec[lastIdx];
     }
 };
+
 int main(){
     Stack <char> s;//here we can replace int,string, or any
 
@@ -44,5 +45,6 @@ int main(){
         cout<<s.top()<<" ";
         s.pop();
     }
+
     return 0;
 }

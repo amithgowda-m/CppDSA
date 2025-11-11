@@ -19,6 +19,7 @@ void SelectionSort(int *arr,int n){
         }   
     }
 }
+
 int main(){
     int arr[]={4,5,3,2,1};
     int n = sizeof(arr)/sizeof(int);

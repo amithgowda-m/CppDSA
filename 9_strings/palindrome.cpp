@@ -14,9 +14,6 @@ bool check(char word[], int n) {
     return true;
 }
 
-
-
-
 int main() {
     char word[] = "sees";
     int startIndex = 0;
@@ -25,7 +22,6 @@ int main() {
     } else {
         cout << "Not a palindrome" << endl;
     }
-
     char work[]="bees";
     strcpy(word,work);
     cout<<"\n"<<word;

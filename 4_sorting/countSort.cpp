@@ -2,10 +2,7 @@
 using namespace std;
 
 void countSort(int arr[], int n) {
-    
     int freq[1000] = {0};  
-
-    
     int minVal = INT32_MAX;
     int maxVal = INT32_MIN;
 
@@ -14,12 +11,9 @@ void countSort(int arr[], int n) {
         if (arr[i] > maxVal) maxVal = arr[i];
     }
 
-   
     for (int i = 0; i < n; i++) {
         freq[arr[i]]++;  
     }
-
-    
     int j = 0;
     for (int i = minVal; i <= maxVal; i++) {
         while (freq[i] > 0) {
@@ -33,11 +27,8 @@ void countSort(int arr[], int n) {
 int main() {
     int arr[8] = {1, 4, 1, 3, 2, 4, 3, 7};  
     countSort(arr, 8);  
-
-    
     for (int i = 0; i < 8; i++) {
         cout << arr[i] << " ";
     }
-
     return 0;
 }
