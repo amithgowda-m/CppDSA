@@ -46,40 +46,31 @@ public:
 
         return temp->endOfWord;
     }
-};
 
-bool helper(Trie &trie,string key){
-    if(key.size()==0){
+    bool startsWith(string prefix){
+        Node* temp = root;
+        for(int i=0;i<prefix.size();i++){
+            if(temp->children.count(prefix[i])){
+                temp=temp->children[prefix[i]];
+            }
+            else{
+                return false;
+            }
+        }
         return true;
     }
-    for(int i=0;i<key.size();i++){
-        string first = key.substr(0,i+1);
-        string second= key.substr(i+1);
-        
-        if(trie.search(first) && helper(trie,second)){//when both values are ture then return true
-            return true;
-        }
-    }
-    return false;
-}
+};
 
-//word break problem
-bool wordBreak(vector<string> dict, string key){
-    Trie trie;
-    for(int i=0;i<dict.size();i++){
-        trie.insert(dict[i]);
-    }
-    return helper(trie,key);
-}
+
 
 int main(){
-    vector<string> words = {"i","like","sam","samsung","mobile","ice"};
+    vector<string> words = {"the","a","there","their","any","thee"};
     Trie trie;
     for(int i=0;i<words.size();i++){
         trie.insert(words[i]);
     }
-    cout<<wordBreak(words,"ilikesamsung")<<endl;
-    
 
+    // cout<<trie.search("thre");
+    cout<<trie.startsWith("theip" );
     return 0;
 }

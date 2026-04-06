@@ -24,9 +24,9 @@ bool compare(pair<int,int>p1,pair<int,int>p2){
 }
 
 int main(){
-    // vector<int> start={1,3,0,5,8,5};
-    // vector<int> end={2,4,6,7,9,9};
-    // cout<<maxActivities(start,end);
+    vector<int> start={1,3,0,5,8,5};
+    vector<int> end={2,4,6,7,9,9};
+    cout<<maxActivities(start,end)<<endl;
     vector<pair<int,int>> activity(3,make_pair(0,0));
     activity[0]=make_pair(0,9);
     activity[1]=make_pair(1,2);

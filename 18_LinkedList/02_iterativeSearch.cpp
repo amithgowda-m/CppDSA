@@ -119,7 +119,7 @@ class List{
 //     tail = oldHead; // update tail
 // }
 
-    void removeNth(int n) {
+    void removeNth(int n) {//here we are trying to remve nth node from the end
     if (head == NULL) return; // empty list
 
     // Step 1: calculate size
@@ -190,7 +190,7 @@ void removeNth2pointer(int n) {
 
 };
 
-int main(){//iin ll pos stars forrm zero
+int main(){         //iin ll pos stars forrm zero
     List ll;
     ll.push_front(1);
     ll.push_front(2);

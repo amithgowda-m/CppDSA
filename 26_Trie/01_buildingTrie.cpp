@@ -49,7 +49,6 @@ public:
 };
 
 
-//word break problem
 
 int main(){
     vector<string> words = {"the","a","there","their","any","thee"};

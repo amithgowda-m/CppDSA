@@ -48,7 +48,6 @@ public:
             push_front(val);
             return;
         }
-
         Node* temp = head;
         for (int i = 0; i < pos - 2; i++) {
             if (temp == NULL) {
@@ -57,7 +56,6 @@ public:
             }
             temp = temp->next;
         }
-
         newNode->next = temp->next;
         temp->next = newNode;
         if (newNode->next == NULL) tail = newNode;
@@ -154,7 +152,7 @@ public:
     }
 
     void zigZagLL(Node* head){
-        Node* rightHead = splitHead(head);
+        Node* rightHead = reverse(head);
         Node* rightHeadRev = reverse(rightHead);
 
         //alternate merging: 1st head=head second ll head = right head
