@@ -2,6 +2,7 @@
 #include <vector>
 #include <list>
 #include <stack>
+#include <queue>
 using namespace std;
 
 class Graph{
@@ -58,6 +59,36 @@ public:
             s.pop();
         }
     }
+
+    void calcIndegree(vector<int> &indeg){
+        for(int u=0; u<V ; u++){
+            for(auto v: l[u]){
+                indeg[v]++;
+            }
+        }
+    }
+    void topoSort2(){//Kahn's Algorithm
+        vector<int> indeg(V,0);
+        calcIndegree(indeg);
+        queue<int> q;
+        for(int i=0;i<V;i++){
+            if(indeg[i]==0){
+                q.push(i);
+            }
+        }
+
+        while(!q.empty()){
+            int curr = q.front();
+            q.pop();
+            cout<<curr<<" ";
+            for(auto v: l[curr]){
+                indeg[v]--;
+                if(indeg[v]==0){
+                    q.push(v);
+                }
+            }
+        }
+    }
 };
 
 int main(){
@@ -73,5 +104,7 @@ int main(){
     graph.print();
     
     graph.topoSort();
+    cout<<endl;
+    graph.topoSort2();
     return 0;
 }

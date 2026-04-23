@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int powOfTwo(int num)
+void powOfTwo(int num)
 {
     int n = num - 1;
     if (num & n)
@@ -12,6 +12,7 @@ int powOfTwo(int num)
     {
         cout << "It is power of 2";
     }
+
 }
 
 int main()

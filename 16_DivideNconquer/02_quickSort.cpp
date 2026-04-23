@@ -33,7 +33,7 @@ void quickSort(int arr[],int si, int ei){
     }
     int  pivotIdx = partition(arr,si,ei);
     quickSort(arr,si,pivotIdx-1);//left helf Call quickSort on left [3, 2] → sorts into [2, 3].
-    quickSort(arr,pivotIdx+1,ei);//right halfCall quickSort on right [5, 6, 7] → already sorted.
+    quickSort(arr,pivotIdx+1,ei);//right halfCall quickSort on right [5, 6, 7] → already sorted.0  
 }
 
 int main(){
