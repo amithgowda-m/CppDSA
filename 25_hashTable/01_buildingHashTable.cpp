@@ -15,7 +15,6 @@ public:
         this->val = val;
         next = NULL;
     }
-    
 };
 
 class HashTable {

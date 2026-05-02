@@ -19,6 +19,9 @@ bool isSafe(vector<vector<char>> &board, int row, int col) {
     for (int i = 0; i < row; i++)
         if (board[i][col] == 'Q') return false;
 
+    for (int j = 0; j < col; j++)
+        if (board[row][j] == 'Q') return false;
+
     for (int i = row-1, j = col-1; i >= 0 && j >= 0; i--, j--)
         if (board[i][j] == 'Q') return false;
 
