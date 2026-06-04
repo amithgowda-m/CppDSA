@@ -7,7 +7,7 @@ void dec2bin(int a){
     int pow =1;
 
     while (a>0)
-    {
+    { 
         remainder = a%2;
         result += remainder*pow;
         pow= pow*10;
@@ -17,6 +17,6 @@ void dec2bin(int a){
 }
 
 int main(){
-    dec2bin(255);
+    dec2bin(11);
     return 0;
 }

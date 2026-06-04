@@ -36,9 +36,9 @@ public:
                 mst[u]=true;
                 ans+=wtg;
                 for(auto lst : l[u]){
-                    int v = lst.first;
-                    int currWt = lst.second;
-                    pq.push(make_pair(v,currWt));//push wt , v
+                    int currWt = lst.first;
+                    int v = lst.second;
+                    pq.push(make_pair(currWt,v));//push wt , v
                 }
             }
         }

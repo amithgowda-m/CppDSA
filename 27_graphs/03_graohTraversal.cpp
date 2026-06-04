@@ -68,7 +68,7 @@ public:
         visited[src]=true;
         for(auto v : l[src]){
             if(!visited[v]){
-                hasPath(v,dest,visited);
+                if(hasPath(v,dest,visited)) return true;
             }
         }
         return false;
@@ -77,11 +77,11 @@ public:
         vector<bool>visited(v,false);
         int ans = hasPath(src,dest,visited);
         if(ans){
-            cout<<"False";
+            cout<<"Path exists";
 
         }
         else{
-            cout<<"True";
+            cout<<"No path";
         }
     }
 };
@@ -93,12 +93,12 @@ int main(){
     graph.addEdge(1,3);
     graph.addEdge(2,4);
     graph.addEdge(3,4);
-    graph.addEdge(4,5);
+    graph.addEdge(4,5);0
     graph.addEdge(3,5);
     graph.addEdge(5,6);
 
     graph.print();
-    graph.bfs();
+    graph.bfs();AQ
     cout<<endl;
     graph.dfsHelper();
     cout<<endl;
